@@ -1,0 +1,241 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;      
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+
+.hello {
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.hello h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.hello p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+
+button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #16a085;
+}
+
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #27ae60;
+    transition: opacity 0.5s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.logo img {
+    height: 100px;       
+    width: auto;         
+    display: block;       
+}
+.bg-img {
+     width: 100vw;        
+    max-width: 100%;     
+    height: 400px;        
+    object-fit: cover;    
+    display: block;   
+}
+.hello123 {
+    display: block;       
+    margin-left: auto;   
+    margin-right: auto;   
+    width: 20%;    
+}
+
+.carousel-container {
+    max-width: 800px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden; 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out; 
+}
+
+
+.slide-img {
+    width: 100%;
+    flex-shrink: 0;
+    height: 450px;
+    object-fit: cover;
+}
+
+.image-container{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.image-container img{
+    width: 100%;
+    height: auto;
+}
+
+.hover-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .hover-text{
+    opacity: 1;
+}
+.card {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(144, 196, 144);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;    
+  height: 100%; 
+  border-radius: 12px; 
+}
+
+.title {
+  color: black;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.card-container {       
+  flex-wrap: wrap;          
+  gap: 20px;                
+  justify-content: center;  
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px;
+  padding: 20px;
+  padding-bottom: 150px; 
+}
+
+.main-content {
+  flex: 1;
+}
+
+.site-footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.header-section {
+  position: relative; 
+  width: 100%;
+}
+ .round-img{
+    border-radius: 12px;
+ }
+
+ .space{
+    padding-bottom: 20px;
+ }
